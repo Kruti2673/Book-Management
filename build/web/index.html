@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BOOK REGISTRATION</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.css">
+    </head>
+    <body class="container-fluid card" style="width:40rem;">
+        <h2 class="bg-danger text-white text-center">Book Registration</h2>
+        <form action="RegisterServlet" method="get">
+            <table class="table table-hover">
+                
+                <tr>
+                    <td>Book Name</td>
+                    <td><input type="txt" name="bookName" required></td>
+                </tr>
+                <tr>
+                    <td>Book Edition</td>
+                    <td><input type="txt" name="bookEdition" required></td>
+                </tr>
+                <tr>
+                    <td>Book Price</td>
+                    <td><input type="txt" name="bookPrice" required></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" class="btn btn-outline-success" value="register"></td>
+                    <td><input type="reset" class="btn btn-outline-danger" name="cancel"></td>
+                </tr>
+            </table>
+            <a href="BooklistServlet">Book List</a>
+        </form>
+    </body>
+</html>
